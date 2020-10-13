@@ -47,8 +47,6 @@ router.put('/user/:userId', async function(req, res, next) {
   const userId = req.params.userId
   const replacementObject = req.body
 
-  console.log(userId)
-
   await client.connect()
   const db = client.db(process.env.MONGODB_DB_NAME) // local
   

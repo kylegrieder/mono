@@ -10,8 +10,8 @@ function Card(props) {
                 {
                     Object.entries(props.user).map(([key, value], index) => {
                         if (key !== 'name' && key !== '_id') {
-                                return (
-                                    <div key={index} className="card-subtitle mb-2 text-muted">
+                            return (
+                                <div key={index} className="card-subtitle mb-2 text-muted">
                                     {key}: {value}
                                 </div>
                             )
